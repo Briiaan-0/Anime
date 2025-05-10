@@ -1,0 +1,126 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #121212;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3), 0 4px 8px rgba(255, 0, 255, 0.3);
+    border-top: 2px solid #00ffcc;
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    width: 100%;
+    z-index: 10;
+    margin-top: auto;
+    /* Esto asegura que el footer siempre se quede al final */
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left p {
+    margin: 0.5rem 0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff00ff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ff00ff;
+}
+
+/* Asegura que el contenedor principal ocupe todo el alto de la ventana */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Contenedor principal de la página */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenido principal de la página */
+.main-content {
+    flex: 1;
+    /* Esto hace que el contenido ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: none;
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Asegurarse de que el contenido en pantallas pequeñas expanda el espacio disponible */
+@media (max-width: 480px) {
+    .home-container {
+        padding-bottom: 2rem;
+        /* Añadir espacio extra si es necesario */
+    }
+}
