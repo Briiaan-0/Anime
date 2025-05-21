@@ -9,6 +9,8 @@
     /* Borde inferior neón */
     backdrop-filter: blur(8px);
     /* Efecto de desenfoque en el fondo */
+    position: relative;
+    z-index: 1000;
 }
 
 .header-container {
@@ -101,5 +103,6 @@
 
     .nav.show {
         display: flex;
+
     }
 }

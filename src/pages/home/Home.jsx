@@ -3,6 +3,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import popularService from "../../services/popularService";
 import "./Home.css";
+import WelcomeBanner from "../../components/banner/WelcomeBanner";
 
 function Home() {
     const [popularAnimes, setPopularAnimes] = useState([]);
@@ -54,9 +55,12 @@ function Home() {
             <Header />
             <div className="home-container">
                 <section className="welcome-section">
-                    <h1>Welcome to the Anime World</h1>
-                    <p>Discover your favorite anime series and movies.</p>
-                    <p>Find new recommendations, stay updated with the latest news, and join the anime community.</p>
+                    <WelcomeBanner
+                        title={"Welcome to the AnimeVerse"}
+                        subtitle={"Discover your favorite anime series and movies."}
+                        ctaText={"Explore Animes"}
+                        onCtaClick={() => window.location.href = "/news"}
+                    />
                 </section>
 
                 <section className="explore-animes">

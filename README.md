@@ -17,6 +17,11 @@ Built with React and hosted on Firebase, AnimeVerse combines aesthetics with fun
 
 ---
 
+## Hosting 
+ - https://anime-react-1bf16.web.app/
+
+ ---
+
 ## Built With
 
 - [React](https://reactjs.org/) – UI library
