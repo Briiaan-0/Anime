@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Noticias AnimeVerse</title>
+        <link>https://tuproyecto.web.app/news</link>
+        <description>Últimas noticias del mundo anime en AnimeVerse</description>
+
+        <item>
+            <title>Nuevo anime en tendencia: Jujutsu Kaisen</title>
+            <link>https://tuproyecto.web.app/news/jujutsu-kaisen</link>
+            <description>Una nueva temporada ha llegado cargada de acción y emoción.</description>
+            <pubDate>Mon, 20 May 2025 10:00:00 GMT</pubDate>
+        </item>
+
+        <!-- Puedes añadir más items -->
+    </channel>
+</rss>

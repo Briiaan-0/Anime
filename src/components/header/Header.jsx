@@ -24,16 +24,16 @@ function Header() {
                 {/* Menú de navegación para pantallas grandes */}
                 <nav className={`nav ${isMenuOpen ? "show" : ""}`}>
                     <Link to="/news" className="nav-link">
-                        Novedades
+                        News
                     </Link>
                     <Link to="/animelist" className="nav-link">
-                        Listado
+                        Anime List
                     </Link>
                     <Link to="/favoritos" className="nav-link">
-                        Favoritos
+                        Favourites
                     </Link>
                     <Link to="/buscar" className="nav-link">
-                        Buscar
+                        Search
                     </Link>
                 </nav>
             </div>

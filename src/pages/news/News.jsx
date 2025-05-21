@@ -27,6 +27,13 @@ function News() {
             <div className="news-container">
                 <section className="latest-news">
                     <h1>Latest Anime News</h1>
+
+                    <p className="rss-link">
+                        <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
+                            🔗 Ver feed RSS de AnimeVerse
+                        </a>
+                    </p>
+
                     <div className="news-list">
                         {newsArticles.length > 0 ? (
                             newsArticles.map((article, index) => (
