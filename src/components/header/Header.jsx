@@ -29,10 +29,7 @@ function Header() {
                     <Link to="/animelist" className="nav-link">
                         Anime List
                     </Link>
-                    <Link to="/favoritos" className="nav-link">
-                        Favourites
-                    </Link>
-                    <Link to="/buscar" className="nav-link">
+                    <Link to="/search" className="nav-link">
                         Search
                     </Link>
                 </nav>
